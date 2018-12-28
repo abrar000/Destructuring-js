@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Destructuring in javascript</title>
+</head>
+
+<body>
+
+  <h1 style="text-align:center">Destructuring in javascript</h1>
+  <p style="text-align:center">Its a way to extract values from objects,arrays and put them into individual variables</p>
+
+  <br>
+  <br>
+  <br>
+
+  <p>
+
+    Object destructuring <br><br>
+
+    const person = { <br>
+    name: "abrar", <br>
+    age: 50, <br>
+    lastName: "hussain" <br>
+    }; <br>
+
+    let {name, age, lastName}= person; <br>
+
+    document.write(name); <br>
+    document.write(age); <br>
+    document.write(lastName); <br><br>
+    output is:<br>
+    abrar<br>
+    50<br>
+    hussain<br>
+
+  </p>
+  <p>
+    <hr>
+    Array destructuring<br><br>
+    let salery = ["25000", "2000", "10000"];<br>
+    let [high, low, average] = salery;<br>
+    document.write(low);<br>
+    document.write(high );<br>
+    document.write(average);<br><br>
+    output is:<br>
+    2000<br>
+    25000<br>
+    10000<br>
+  </p>
+  <hr>
+  <p>
+    another example of array destructure by using ...rest<br><br>
+
+    let number = [10, 20, 30, 40, 50, 60, 70];<br>
+    let [a, b, ...c] = number;<br>
+    document.write(a);<br>
+    document.write(b);<br>
+    document.write(c);<br><br>
+    the output is:<br>
+    10<br>
+    20<br>
+    30,40,50,60,70<br>
+  </p>
+  <hr>
+  <h5>javscript output:</h5>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
